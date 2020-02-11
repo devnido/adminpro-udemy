@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UsuarioService } from './usuario/usuario.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginGuardGuard } from './guards/login-guard.guard';
+import { SubirArchivoService } from './subir-archivo/subir-archivo.service';
 
 import {
   SettingsService,
@@ -22,7 +23,8 @@ import {
     SidebarService,
     SharedService,
     UsuarioService,
-    LoginGuardGuard
+    LoginGuardGuard,
+    SubirArchivoService
   ]
 })
 export class ServiceModule { }
