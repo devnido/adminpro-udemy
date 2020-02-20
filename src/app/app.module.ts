@@ -15,26 +15,29 @@ import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
 
 import { ServiceModule } from './services/service.module';
+import { PagesComponent } from './pages/pages.component';
+import { SharedModule } from './shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    BrowserModule,
-    PagesModule,
-    FormsModule,
-    ReactiveFormsModule,
-    ServiceModule,
-    APP_ROUTES
-  ],
-  providers: [
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        RegisterComponent,
+        PagesComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        ServiceModule,
+        SharedModule,
+        APP_ROUTES
+    ],
+    providers: [
 
-  ],
-  bootstrap: [AppComponent]
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
